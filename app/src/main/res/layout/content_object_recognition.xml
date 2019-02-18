@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ObjectRecognition"
+    tools:showIn="@layout/activity_object_recognition">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btn_capture"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+       android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:textSize="20sp"
+        android:text="@string/capture_image" />
+
+    <Button
+        android:id="@+id/btn_send_image"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:textSize="20sp"
+        android:text="ANALYZE OBJECT" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.major.project.drishti.MainActivity">
+
+    <RelativeLayout
+        android:background="#c7c7c7"
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:text="This grey shade is tapping area for various functions and black shade is for SUBMIT button." />
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="1. TAP 3 times for Object Recognition" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView1"
+            android:text="2. TAP 4 times for Google Maps" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_below="@+id/textView2"
+            android:text="3. TAP 5 times for EMERGENCY DIALER" />
+        <Button
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textColor="#ffffff"
+            android:background="#000000"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:text="TAP to GO"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
